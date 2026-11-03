@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo ver los archivos embebidos de una notificación en TAD</title>
+<style>
+:root{--navy:#13304a;--yellow:#ffd62e;--bg:#f4f7fa;--ink:#1c2b39;--muted:#5b6b7b;--line:#dbe3ea}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:var(--navy);color:#fff;padding:28px 20px}
+header .in,main{max-width:860px;margin:0 auto}
+header h1{margin:0 0 6px;font-size:1.5rem}
+header p{margin:0;color:#c4d4e2}
+main{padding:26px 20px 60px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+a.card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;transition:transform .12s,box-shadow .12s}
+a.card:hover,a.card:focus-visible{transform:translateY(-2px);box-shadow:0 8px 22px rgba(19,48,74,.14);outline:none}
+.ico{width:48px;height:48px;border-radius:12px;background:var(--yellow);display:grid;place-items:center;margin-bottom:14px}
+.ico svg{width:26px;height:26px;stroke:var(--navy);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+a.card h2{margin:0 0 6px;font-size:1.15rem;color:var(--navy)}
+a.card p{margin:0 0 14px;color:var(--muted);font-size:.95rem}
+.btn{display:inline-block;background:var(--navy);color:#fff;border-radius:10px;padding:9px 16px;font-weight:600;font-size:.92rem;text-decoration:none;margin:0 8px 8px 0}
+.btn.alt{background:#fff;color:var(--navy);border:2px solid var(--navy);padding:7px 14px}
+a.btn:hover,a.btn:focus-visible{filter:brightness(1.15);outline:none}
+div.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.steps{margin:26px 0 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+.steps h3{margin:0 0 8px;font-size:1rem;color:var(--navy)}
+.steps ol{margin:0;padding-left:20px;color:var(--muted)}
+@media (max-width:640px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="in">
+    <h1>Ver los archivos embebidos de una notificación en TAD</h1>
+    <p>Equipo BA &rarr; TAD &rarr; Notificaciones &rarr; descargar el PDF &rarr; ver los embebidos</p>
+  </div>
+</header>
+<main>
+  <div class="grid">
+    <a class="card" href="instructivo.html">
+      <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4z"/><path d="M8 20h8M12 16v4"/></svg></div>
+      <h2>Instructivo interactivo</h2>
+      <p>Paso a paso, con capturas y los clics marcados en rojo. Se avanza con los botones o con las flechas del teclado.</p>
+      <span class="btn">Abrir el instructivo</span>
+    </a>
+    <div class="card">
+      <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h6"/></svg></div>
+      <h2>Instructivo en PDF</h2>
+      <p>El mismo recorrido, de corrido, para leer o imprimir. Se puede abrir en el navegador o descargar.</p>
+      <a class="btn" href="instructivo.pdf">Abrir el PDF</a>
+      <a class="btn alt" href="instructivo.pdf" download="Instructivo_TAD_embebidos.pdf">Descargar el PDF</a>
+    </div>
+  </div>
+  <div class="steps">
+    <h3>Qué se necesita</h3>
+    <ol>
+      <li>Internet y la cuenta @bue (usuario CUIL/CUIT y contraseña).</li>
+      <li>Recomendado: Google Chrome con la extensión <i>Adobe Acrobat: herramientas para convertir, editar y firmar PDFs</i>.</li>
+      <li>Alternativa: Adobe Acrobat de escritorio.</li>
+    </ol>
+  </div>
+</main>
+</body>
+</html>
